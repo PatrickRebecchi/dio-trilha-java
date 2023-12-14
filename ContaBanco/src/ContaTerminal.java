@@ -20,10 +20,10 @@ public class ContaTerminal {
             System.out.println("Digite o seu saldo: ");
             float saldo = sc.nextFloat();
 
-            System.out.println("Numero: " + numero);
-            System.out.println("Agencia: " + agencia);
-            System.out.println("Nome Cliente: " + nome);
-            System.out.println("Saldo: " + saldo);
+            System.out.printf("""
+        Ola %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %s e seu saldo %.2f já está disponível para saque
+        """, nome, agencia, numero, saldo);
+
         }else{
             System.out.println("Opcão invalida");
         }
